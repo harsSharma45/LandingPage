@@ -41,51 +41,63 @@ export function AutoSliderBanner() {
         loop
         muted
       />
-      <div className="absolute top-0 left-0 w-full flex flex-col sm:flex-row justify-between items-center p-4 sm:p-6">
+      <div className="absolute top-0 left-0 w-full flex justify-between items-center ">
         <div className="flex items-center">
           <img 
             src="https://res.cloudinary.com/dpwqggym0/image/upload/v1740585853/lpu-logo-lovely_professional_university_oivxow_oxpi5n.png" 
             alt="Logo" 
-            className="w-12 h-12 sm:w-16 sm:h-16 ml-2 sm:ml-4"
+            className="ml-8 mt-8 w-auto h-16 p-0 "
           />
-          <span className="text-white ml-2">Logo</span>
         </div>
-        <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-8 mt-4 sm:mt-0">
-          {["Navigation", "Hotel Booking", "Food Dine-In", "Events", "Placement Info"].map((item) => (
+        <nav className="flex space-x-8 mr-40 mt-6 gap-4">
+          {[
+            "Navigation",
+            "Hotel Booking",
+            "Food Dine-In",
+            "Events",
+            "Placement Info",
+          ].map((item) => (
             <a
               key={item}
               href="#"
-              className="text-white text-sm sm:text-lg hover:text-gray-300 transition-colors"
+              className="text-white text-xl transition-colors"
             >
               {item}
             </a>
           ))}
         </nav>
       </div>
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center sm:items-start justify-center p-4 sm:pl-20 text-center sm:text-left">
-        <h1 className="text-3xl sm:text-6xl md:text-7xl font-bold tracking-tighter text-white mb-4">
+      <div className="font-Monoserrat absolute inset-0 bg-black bg-opacity-50 flex flex-col items-start justify-center pl-40">
+        
+        <h1 className="text-2xl tracking-tighter sm:text-6xl md:text-2xl text-white mb-4">
+          
           Together we have achieved excellence
         </h1>
-        <p className="text-lg sm:text-2xl text-white mb-4 sm:mb-8">
-          Lovely Professional <br className="hidden sm:block" /> University
+        <p className="text-7xl font-extrabold text-white mb-8">
+          
+          LOVELY PROFESSIONAL <br /> UNIVERSITY
         </p>
-        <p className="text-base sm:text-xl text-white mb-4 sm:mb-8">
+        <p className="text-2xl text-white mb-8">
+          
           Transforming Education, Transforming India
         </p>
-        <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
+        <div className="flex space-x-4">
+          
           <Button
             size="lg"
             variant="outline"
-            className="bg-transparent border-white text-white hover:bg-white hover:text-black transition-colors"
+            className="font-openSans text-[18px] bg-transparent border-white text-white hover:bg-white hover:text-black transition-colors"
           >
-            View our Programmes
+            
+             Navigation ➔
           </Button>
           <Button
             size="lg"
             variant="outline"
-            className="bg-transparent border-white text-white hover:bg-white hover:text-black transition-colors"
+            className="font-openSans text-[18px] bg-transparent border-white text-white hover:bg-white hover:text-black transition-colors"
           >
-            Contact Us
+            
+            Other Services ➔
           </Button>
         </div>
       </div>
