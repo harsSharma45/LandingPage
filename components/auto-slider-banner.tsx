@@ -48,6 +48,10 @@ export function AutoSliderBanner() {
             alt="Logo" 
             className="ml-8 mt-8 w-auto h-16 p-0 "
           />
+<<<<<<< HEAD
+=======
+{/*           //<span className="text-white ml-2">Logo</span> */}
+>>>>>>> 85de1749aaf1c3a18854670642f07c5e5505e85c
         </div>
         <nav className="flex space-x-8 mr-40 mt-6 gap-4">
           {[
