@@ -48,7 +48,7 @@ export function AutoSliderBanner() {
             alt="Logo" 
             className="w-12 h-12 sm:w-16 sm:h-16 ml-2 sm:ml-4"
           />
-          <span className="text-white ml-2">Logo</span>
+{/*           //<span className="text-white ml-2">Logo</span> */}
         </div>
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-8 mt-4 sm:mt-0">
           {["Navigation", "Hotel Booking", "Food Dine-In", "Events", "Placement Info"].map((item) => (
